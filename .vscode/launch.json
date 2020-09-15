@@ -1,0 +1,30 @@
+{
+    "version": "0.2.0",
+    "color-highlight.languages": ["*"],
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#203033",
+      "titleBar.activeBackground": "#2C4448",
+      "titleBar.activeForeground": "#F7FAFA"
+    },
+    "configurations": [
+      {
+        "type": "node",
+        "request": "attach",
+        "name": "Debug",
+        "protocol": "inspector",
+        "port": 9229,
+        "restart": true,
+        "cwd": "${workspaceRoot}"
+      },
+      {
+        "type": "node",
+        "request": "attach",
+        "name": "Debug Docker",
+        "remoteRoot": "/usr/src/api-remuneracao",
+        "port": 9222,
+        "restart": true
+      }
+    ]
+  }
